@@ -20,8 +20,8 @@ jobs:
         uses: actions/setup-node@v1
       - run: npm install
       - run: npm run build
-        env:
-          CI: false
+        # env:
+        #   CI: false
       - run: npx next export
         env:
           CI: true
