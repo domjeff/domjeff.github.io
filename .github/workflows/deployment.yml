@@ -22,7 +22,8 @@ jobs:
           node-version: '14'
           cache: 'npm'
       - run: npm install
-      - run: npm run build
+      # - run: npm run build
+      - run : npm run dev
       - run: npx next export
         env:
           CI: true
